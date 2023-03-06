@@ -17,6 +17,13 @@ namespace CleanMovie.Application
 
         public IMovieRepository MovieRepository { get; }
 
+        public Movie CreateMovie(Movie movie)
+        {
+            _movieRepository.CreateMovie(movie);
+
+            return movie;
+        }
+
         public List<Movie> GetAllMovies()
         {
             try

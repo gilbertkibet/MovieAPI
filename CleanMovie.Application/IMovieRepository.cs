@@ -11,6 +11,6 @@ namespace CleanMovie.Application
     {
         List<Movie> GetAllMovies();
 
-
+        Movie CreateMovie(Movie movie);
     }
 }
